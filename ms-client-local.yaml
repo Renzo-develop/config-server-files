@@ -8,7 +8,7 @@ spring:
     mongodb:
       database: msclient
       host: localhost
-      port: 27015
+      port: 27017
   jackson:
     default-property-inclusion: NON_NULL
 
