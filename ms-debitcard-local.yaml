@@ -3,11 +3,6 @@ application:
     client:
       url: http://localhost:8080/client
 spring:
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: consumer
-    bootstrap-servers: localhost:9092
   application:
     name: ms-debitcard
   data:
