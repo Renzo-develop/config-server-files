@@ -1,7 +1,7 @@
 application:
   consume:
     client:
-	  url: http://localhost:8080/client
+      url: http://localhost:8080/client
 spring:
   kafka:
     consumer:
