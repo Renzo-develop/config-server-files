@@ -7,9 +7,9 @@ spring:
     name: ms-debitcard
   kafka:
     consumer:
-      bootstrap-servers: 127.0.0.1:9092
+      bootstrap-servers: localhost:9092
       group-id: consumer
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: localhost:9092
   data:
     mongodb:
       database: msdebitcard
