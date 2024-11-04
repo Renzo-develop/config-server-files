@@ -5,6 +5,11 @@ application:
 spring:
   application:
     name: ms-debitcard
+  kafka:
+    consumer:
+      bootstrap-servers: kafka:9092
+      group-id: consumer
+    bootstrap-servers: kafka:9092
   data:
     mongodb:
       database: msdebitcard
