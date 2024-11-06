@@ -1,15 +1,18 @@
 application:
   consume:
     client:
-	  url: http://localhost:8080/client
+      url: http://localhost:8080/client
 spring:
+  application:
+    name: ms-debitcard
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
       group-id: consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     bootstrap-servers: localhost:9092
-  application:
-    name: ms-debitcard
   data:
     mongodb:
       database: msdebitcard
