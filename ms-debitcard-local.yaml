@@ -1,3 +1,7 @@
+application:
+  consume:
+    msclient:
+      url: http://localhost:8080/client
 spring:
   kafka:
     consumer:
