@@ -1,0 +1,20 @@
+application:
+  consume:
+    msdebitcard:
+      url: http://localhost:8081/debitcard
+
+spring:
+  application:
+    name: ms-transaction
+  data:
+    mongodb:
+      database: mstransaction
+      port: '27017'
+      host: localhost
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+server:
+  port: '8082'
