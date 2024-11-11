@@ -15,6 +15,7 @@ spring:
     mongodb:
       database: msdebitcard
       port: '27017'
-      host: localhost
+      host: localhost 
 server:
   port: '8081'
+  
