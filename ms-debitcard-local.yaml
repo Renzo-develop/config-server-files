@@ -1,6 +1,6 @@
 application:
   consume:
-    tnu:
+    ms-client:
       url: http://localhost:8080/client
 spring:
   application:
