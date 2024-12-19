@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ms-client
+  jackson:
+    default-property-inclusion: NON_NULL
+  data:
+    mongodb:
+      database: msclient
+      port: '27017'
+      host: mongodb
+resilience4j:
+  circuitbreaker:
+    configs:
+      shared:
+        waitDurationInOpenState: 1s
+      default:
+        registerHealthIndicator: 'true'
+    instances:
+      validationDataHandler:
+        baseConfig: default
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: 'true'
+server:
+  port: '8081'
